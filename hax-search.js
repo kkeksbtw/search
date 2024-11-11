@@ -271,7 +271,8 @@ export class HaxSearch extends DDDSuper(I18NMixin(LitElement)) {
     return html`
       <div class="card" @click="${() => this._openCard(item)}">
         <img
-          src="${item.metadata?.image || "/placeholder.svg"}"
+          src="https://haxtheweb.org/${item.metadata?.image ||
+          "/placeholder.svg"}"
           alt="${item.title}"
         />
         <div class="card-content">
@@ -281,12 +282,15 @@ export class HaxSearch extends DDDSuper(I18NMixin(LitElement)) {
             <li>${item.description}</li>
           </ul>
           <div class="link-buttons">
-            <a class="link-button" href="${item.location}" target="_blank"
+            <a
+              class="link-button"
+              href="https://haxtheweb.org/${item.slug}"
+              target="_blank"
               >Open Content</a
             >
             <a
               class="link-button"
-              href="${item.slug}/index.html"
+              href="https://haxtheweb.org/${item.location}"
               target="_blank"
               >Open Source</a
             >
