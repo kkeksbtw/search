@@ -9,19 +9,19 @@ export class HaxSearch extends DDDSuper(I18NMixin(LitElement)) {
 
   constructor() {
     super();
-    this.siteUrl = "";
+    this.siteUrl = " ";
     this.siteData = null;
     this.results = [];
     this.loading = false;
-    this.error = "";
+    this.error = " ";
     this.t = {
-      analyze: "Analyze",
-      enterUrl: "Enter HAX site URL",
-      name: "Name",
-      description: "Description",
-      theme: "Theme",
-      created: "Created",
-      lastUpdated: "Last updated",
+      analyze: "Analyzing",
+      enterUrl: "Enter HAX site URLS",
+      name: "Names",
+      description: "Descriptions",
+      theme: "Themes",
+      created: "Create",
+      lastUpdated: "Last update",
       openContent: "Open Content",
       openSource: "Open Source",
     };
